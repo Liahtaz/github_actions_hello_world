@@ -1,10 +1,12 @@
-# Original workflow copied from: https://gist.github.com/tuladhar/b34d42da132258526771a83219b0c604
+# Original workflow copied from: 
+# https://gist.github.com/weibeld/f136048d0a82aacc063f42e684e3c494 
+# and https://gist.github.com/tuladhar/b34d42da132258526771a83219b0c604
 name: Hello World
 on:
   workflow_dispatch:
 jobs:
-  build:
+  hello-world:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Run a one-line script
+      - name: my-step
+        run: echo "Hello World!"
