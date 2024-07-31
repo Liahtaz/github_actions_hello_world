@@ -1,0 +1,10 @@
+# Original workflow copied from: https://gist.github.com/tuladhar/b34d42da132258526771a83219b0c604
+name: Hello World
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a one-line script
