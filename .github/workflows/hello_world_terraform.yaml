@@ -1,0 +1,14 @@
+# Original workflow copied from: 
+# https://www.terraformbyexample.com/hello-world/
+name: Hello World Terraform
+on:
+  workflow_dispatch:
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install terraform
+        uses: hashicorp/setup-terraform@v3
+      - name: terraform init
+        run: |
+          terraform init
